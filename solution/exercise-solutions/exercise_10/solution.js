@@ -6,7 +6,7 @@ function createHeavyClosure() {
   };
 }
 
-const closureFunc = createHeavyClosure();
+let closureFunc = createHeavyClosure();
 console.log(closureFunc()); // Outputs: 1000000
 
 // The largeArray is still in memory because closureFunc holds a reference

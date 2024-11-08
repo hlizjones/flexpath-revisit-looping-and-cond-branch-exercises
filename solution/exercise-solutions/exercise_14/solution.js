@@ -26,10 +26,10 @@ const dataStore = {
 deepFreeze(dataStore);
 
 // Testing modifications
-dataStore.number = 100; // Fails silently
+dataStore.number = 100; // Fails silently, unless in strict mode
 dataStore.array.push(4); // Throws error in strict mode
 dataStore.nested.c.d = 5; // Throws error in strict mode
-dataStore.newProp = "New"; // Fails silently
+dataStore.newProp = "New"; // Fails silently, unless in strict mode
 
 console.log(dataStore);
 // Outputs the original dataStore without modifications
