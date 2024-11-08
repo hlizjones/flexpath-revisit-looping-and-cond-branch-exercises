@@ -1,0 +1,11 @@
+
+Exercise 12: Custom Mathematical Operator Functions
+
+Problem:
+
+Implement custom functions for addition (add), subtraction (subtract), 
+multiplication (multiply), division (divide), modulus (mod), and 
+exponentiation (power) without using the built-in operators (+, -, *, /, %, **). 
+
+Use only the increment (++) and decrement (--) operators, 
+loops, and conditional statements.

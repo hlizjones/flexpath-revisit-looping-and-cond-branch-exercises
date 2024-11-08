@@ -1,0 +1,9 @@
+
+Exercise 13: Deep Understanding of Truthy and Falsy Values
+
+Problem:
+
+Write a function `countFalsyValues` that takes an array of values and 
+returns the number of falsy values in the array. 
+
+Use the Boolean constructor and logical operators to implement this.

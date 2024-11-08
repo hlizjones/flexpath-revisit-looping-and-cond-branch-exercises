@@ -1,0 +1,10 @@
+
+Exercise 4: Advanced Comparison Operators and Type Coercion
+
+Problem:
+
+Write a function `areValuesEqual` that compares two values and 
+returns true if they are equal in value AND type, and false otherwise. 
+
+Handle cases where values are objects, arrays, or functions by 
+comparing their references.

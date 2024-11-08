@@ -1,0 +1,10 @@
+
+Exercise 8: Object Equality and Memory References
+
+Problem:
+
+Write a function `areObjectsEqual` that takes two objects and returns 
+true if they are equal by value, meaning they have the same properties and 
+values (deep equality), and false otherwise. 
+
+The function should handle nested objects and arrays.
