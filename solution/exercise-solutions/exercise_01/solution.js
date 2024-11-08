@@ -35,3 +35,16 @@ const user3 = {
 console.log(validateUser(user1)); // Outputs: true
 console.log(validateUser(user2)); // Outputs: false
 console.log(validateUser(user3)); // Outputs: false
+
+/*
+  Explanation:
+
+  The function uses logical && and || operators to 
+    combine conditions.
+
+  The strict inequality !== ensures that banned is 
+    not true (it could be undefined).
+
+  The function checks for age, admin status or 
+    subscription type, and ban status.
+*/

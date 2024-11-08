@@ -16,3 +16,12 @@ console.log(calculateDiscount("gold", 100)); // Outputs: 20
 console.log(calculateDiscount("silver", 200)); // Outputs: 30
 console.log(calculateDiscount("bronze", 150)); // Outputs: 15
 console.log(calculateDiscount("none", 100)); // Outputs: 0
+
+/*
+  Explanation:
+
+  Nested ternary operators allow for concise conditional expressions.
+  The function calculates the discount based on membership level.
+  Care must be taken with readability when using nested ternaries.
+
+*/

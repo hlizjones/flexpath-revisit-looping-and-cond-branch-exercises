@@ -31,3 +31,14 @@ console.log(counter.decrement()); // Outputs: 2 (postfix)
 console.log(counter.value); // Outputs: 1
 console.log(counter.decrement(true)); // Outputs: 0 (prefix)
 console.log(counter.value); // Outputs: 0
+
+/*
+  Explanation:
+
+  The methods accept a prefix parameter to determine the behavior.
+
+  In postfix mode, the original value is returned 
+    before incrementing/decrementing.
+    
+  In prefix mode, the value is incremented/decremented before returning.
+*/

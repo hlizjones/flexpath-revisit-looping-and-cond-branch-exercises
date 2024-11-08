@@ -22,3 +22,11 @@ console.log(getShippingCost(0.5)); // Outputs: 5
 console.log(getShippingCost(3)); // Outputs: 10
 console.log(getShippingCost(7)); // Outputs: 15
 console.log(getShippingCost(12)); // Outputs: 20
+
+/*
+  Explanation:
+
+  The switch statement uses expressions that evaluate to true.
+  Fallthrough is avoided by using break in each case.
+  This approach handles ranges by evaluating conditions in each case.
+*/
