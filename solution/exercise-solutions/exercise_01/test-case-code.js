@@ -1,4 +1,4 @@
-// Use these for Testing
+// When ready, use code below for testing
 const user1 = {
   age: 25,
   isAdmin: false,

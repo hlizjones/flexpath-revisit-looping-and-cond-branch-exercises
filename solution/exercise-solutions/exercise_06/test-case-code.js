@@ -1,7 +1,5 @@
 // When ready, use code below for testing
 
-/*
-
 function funcA() {
   console.log("funcA called");
   return false;
@@ -19,5 +17,3 @@ function funcC() {
 
 // Outputs: funcA called, funcB called, funcC called, true
 console.log(evaluateExpression(funcA, funcB, funcC));
-
-*/

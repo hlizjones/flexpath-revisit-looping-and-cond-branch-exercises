@@ -64,3 +64,11 @@ console.log(multiply(5, -3)); // Outputs: -15
 console.log(divide(10, 2)); // Outputs: 5
 console.log(mod(10, 3)); // Outputs: 1
 console.log(power(2, 3)); // Outputs: 8
+
+/*
+  Explanation:
+
+  Each function implements the operation using loops and increments/decrements.
+  This demonstrates understanding of mathematical operations at a low level.
+  Edge cases like negative numbers and division by zero are handled.
+*/

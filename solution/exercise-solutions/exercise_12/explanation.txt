@@ -1,5 +1,0 @@
-Explanation:
-
-Each function implements the operation using loops and increments/decrements.
-This demonstrates understanding of mathematical operations at a low level.
-Edge cases like negative numbers and division by zero are handled.

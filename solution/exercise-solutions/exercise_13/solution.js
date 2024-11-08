@@ -23,3 +23,12 @@ const testArray = [
   {},
 ];
 console.log(countFalsyValues(testArray)); // Outputs: 6
+
+/*
+  Explanation:
+
+  The Boolean constructor converts a value to its Boolean equivalent.
+  The ! operator negates the Boolean value, allowing us to check for falsy values.
+  The function counts all values that are falsy.
+
+*/
