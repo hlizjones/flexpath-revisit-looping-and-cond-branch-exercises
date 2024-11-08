@@ -36,3 +36,11 @@ console.log(counter.increment()); // Outputs: 2 (value becomes 3)
 console.log(counter.increment()); // Outputs: 3 (value becomes 0)
 console.log(counter.decrement(true)); // Outputs: 3
 console.log(counter.decrement()); // Outputs: 3 (value becomes 2)
+
+/*
+  Explanation:
+
+  The % operator is used to wrap around the value.
+  The counter increments and decrements within the range 0 to max.
+  Prefix and postfix behavior is implemented similarly to Exercise 5.
+*/

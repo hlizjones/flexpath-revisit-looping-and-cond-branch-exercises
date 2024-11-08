@@ -18,3 +18,12 @@ try {
 } catch (e) {
   console.error(e.message); // Outputs: 'Value cannot be null or undefined'
 }
+
+/*
+  Explanation:
+
+  Strict equality === is used to distinguish null and 
+    undefined from other falsy values.
+    
+  The function handles different types of falsy values appropriately.
+*/
