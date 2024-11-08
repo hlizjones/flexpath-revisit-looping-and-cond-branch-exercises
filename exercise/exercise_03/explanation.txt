@@ -1,0 +1,5 @@
+Explanation:
+
+The switch statement uses expressions that evaluate to true.
+Fallthrough is avoided by using break in each case.
+This approach handles ranges by evaluating conditions in each case.

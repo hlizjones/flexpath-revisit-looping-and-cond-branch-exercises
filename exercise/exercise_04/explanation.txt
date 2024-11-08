@@ -1,0 +1,5 @@
+Explanation:
+
+The function first checks if the types are the same.
+For objects, it compares references since == and === behave the same with objects.
+For primitives, it checks both == and === to ensure value and type equality without using ===.

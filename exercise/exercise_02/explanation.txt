@@ -1,0 +1,5 @@
+Explanation:
+
+Nested ternary operators allow for concise conditional expressions.
+The function calculates the discount based on membership level.
+Care must be taken with readability when using nested ternaries.

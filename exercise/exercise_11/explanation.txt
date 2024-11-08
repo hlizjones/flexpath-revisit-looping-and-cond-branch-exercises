@@ -1,0 +1,6 @@
+Explanation:
+
+Negative numbers are filtered out using an if condition.
+Even numbers (num % 2 === 0) are squared.
+Odd numbers are incremented.
+The function combines multiple conditional logic statements

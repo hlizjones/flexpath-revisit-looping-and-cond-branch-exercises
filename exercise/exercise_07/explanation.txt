@@ -1,0 +1,5 @@
+Explanation:
+
+The function iterates over the arguments and returns the first truthy value.
+The logical OR operator || can be used to chain values, returning the first truthy one.
+Demonstrates understanding of falsy values in JavaScript.

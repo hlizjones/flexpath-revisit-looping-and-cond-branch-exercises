@@ -1,0 +1,5 @@
+Explanation:
+
+Parentheses are used to group conditions correctly.
+Logical operators follow precedence rules, but explicit grouping ensures clarity.
+The function handles both registered users and guests.

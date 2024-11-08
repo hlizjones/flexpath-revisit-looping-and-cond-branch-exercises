@@ -1,0 +1,5 @@
+Explanation:
+
+The function checks if the component exists in the mapping.
+Conditional logic ensures that a default component is returned if the specified one does not exist.
+This approach is common in component-based frameworks.

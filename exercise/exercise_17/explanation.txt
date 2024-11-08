@@ -1,0 +1,5 @@
+Explanation:
+
+Shallow copying copies top-level properties, but nested objects are still references.
+Modifying a nested object in the copy affects the original.
+Deep copying creates entirely new nested objects, preventing unintended side effects.

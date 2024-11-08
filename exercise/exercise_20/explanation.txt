@@ -1,0 +1,5 @@
+Explanation:
+
+The % operator is used to wrap around the value.
+The counter increments and decrements within the range 0 to max.
+Prefix and postfix behavior is implemented similarly to Exercise 5.

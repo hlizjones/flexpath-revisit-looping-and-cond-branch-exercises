@@ -1,0 +1,5 @@
+Explanation:
+
+The methods accept a prefix parameter to determine the behavior.
+In postfix mode, the original value is returned before incrementing/decrementing.
+In prefix mode, the value is incremented/decremented before returning.

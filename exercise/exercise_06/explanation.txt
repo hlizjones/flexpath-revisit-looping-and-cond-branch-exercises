@@ -1,0 +1,5 @@
+Explanation:
+
+The || operator short-circuits if funcA() returns true.
+The && operator ensures funcC() is only called if funcB() returns true.
+The ! operator negates the result of funcC().
