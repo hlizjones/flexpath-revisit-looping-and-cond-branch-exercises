@@ -22,3 +22,15 @@ deepCopy.preferences.language = "es";
 
 console.log(original.preferences.language); // Outputs: 'en'
 console.log(deepCopy.preferences.language); // Outputs: 'es'
+
+/*
+  Explanation:
+
+  Shallow copying copies top-level properties, 
+    but nested objects are still references.
+
+  Modifying a nested object in the copy affects the original.
+
+  Deep copying creates entirely new nested objects, 
+    preventing unintended side effects.
+*/

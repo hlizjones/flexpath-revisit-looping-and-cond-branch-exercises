@@ -17,3 +17,14 @@ function renderComponent(name) {
 // Testing
 console.log(renderComponent("Header")); // Outputs: '<header>Header</header>'
 console.log(renderComponent("Unknown")); // Outputs: '<div>Default Component</div>'
+
+/*
+  Explanation:
+
+  The function checks if the component exists in the mapping.
+
+  Conditional logic ensures that a default component is 
+    returned if the specified one does not exist.
+    
+  This approach is common in component-based frameworks.
+*/
