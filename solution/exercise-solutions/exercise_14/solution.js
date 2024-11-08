@@ -33,3 +33,15 @@ dataStore.newProp = "New"; // Fails silently
 
 console.log(dataStore);
 // Outputs the original dataStore without modifications
+
+/*
+  Explanation:
+
+  deepFreeze recursively freezes all objects and nested objects.
+
+  Object.freeze makes an object immutable.
+
+  Attempting to modify a frozen object fails silently or 
+    throws an error in strict mode.
+
+*/

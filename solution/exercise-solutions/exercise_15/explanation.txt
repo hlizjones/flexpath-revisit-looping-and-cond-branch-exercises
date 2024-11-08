@@ -1,5 +1,0 @@
-Explanation:
-
-The switch statement handles different operators.
-Division by zero is checked for / and %.
-The default case handles invalid operators by throwing an error.

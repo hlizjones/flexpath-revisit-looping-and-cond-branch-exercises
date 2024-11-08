@@ -1,5 +1,0 @@
-Explanation:
-
-deepFreeze recursively freezes all objects and nested objects.
-Object.freeze makes an object immutable.
-Attempting to modify a frozen object fails silently or throws an error in strict mode.

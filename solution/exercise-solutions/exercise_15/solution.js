@@ -26,3 +26,11 @@ console.log(evaluateOperation(5, 3, "*")); // Outputs: 15
 console.log(evaluateOperation(5, 3, "/")); // Outputs: 1.666...
 console.log(evaluateOperation(5, 3, "%")); // Outputs: 2
 console.log(evaluateOperation(5, 3, "^")); // Outputs: 125
+
+/*
+  Explanation:
+
+  The switch statement handles different operators.
+  Division by zero is checked for / and %.
+  The default case handles invalid operators by throwing an error.
+*/

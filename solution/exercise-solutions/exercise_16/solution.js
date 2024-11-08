@@ -25,3 +25,14 @@ const user3 = { isGuest: true };
 console.log(validateInput(user1)); // Outputs: true
 console.log(validateInput(user2)); // Outputs: false
 console.log(validateInput(user3)); // Outputs: true
+
+/*
+  Explanation:
+
+  Parentheses are used to group conditions correctly.
+
+  Logical operators follow precedence rules, but 
+    explicit grouping ensures clarity.
+    
+  The function handles both registered users and guests.
+*/
