@@ -1,5 +1,0 @@
-Explanation:
-
-The function checks for strict equality first.
-It then recursively compares each property.
-Handles nested objects and arrays by recursion.

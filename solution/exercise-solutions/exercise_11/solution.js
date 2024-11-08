@@ -15,3 +15,12 @@ function filterAndTransform(numbers) {
 // Testing
 const nums = [-3, -2, 0, 1, 2, 3, 4];
 console.log(filterAndTransform(nums)); // Outputs: [0, 2, 4, 16]
+
+/*
+  Explanation:
+
+  Negative numbers are filtered out using an if condition.
+  Even numbers (num % 2 === 0) are squared.
+  Odd numbers are incremented.
+  The function combines multiple conditional logic statements
+*/

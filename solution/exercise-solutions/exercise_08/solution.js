@@ -30,3 +30,11 @@ const objC = { a: 1, b: { c: 3 } };
 
 console.log(areObjectsEqual(objA, objB)); // Outputs: true
 console.log(areObjectsEqual(objA, objC)); // Outputs: false
+
+/*
+  Explanation:
+
+  The function checks for strict equality first.
+  It then recursively compares each property.
+  Handles nested objects and arrays by recursion.
+*/

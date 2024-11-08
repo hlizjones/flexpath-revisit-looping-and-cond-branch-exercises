@@ -1,8 +1,7 @@
-function evaluateExpression(funcA, funcB, funcC) {
-  return funcA() || (funcB() && !funcC());
-}
+// When ready, use code below for testing
 
-// Testing
+/*
+
 function funcA() {
   console.log("funcA called");
   return false;
@@ -20,13 +19,5 @@ function funcC() {
 
 // Outputs: funcA called, funcB called, funcC called, true
 console.log(evaluateExpression(funcA, funcB, funcC));
-
-/*
-
-  Explanation:
-
-  The || operator short-circuits if funcA() returns true.
-  The && operator ensures funcC() is only called if funcB() returns true.
-  The ! operator negates the result of funcC().
 
 */

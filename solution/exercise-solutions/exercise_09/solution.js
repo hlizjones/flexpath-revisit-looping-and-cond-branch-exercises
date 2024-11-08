@@ -26,3 +26,12 @@ console.log(settings);
 //   notifications: true,
 //   preferences: { autoSave: false, sync: true }
 // }
+
+/*
+  Explanation:
+
+  The function iterates over the object's properties.
+  It uses the typeof operator to check for Booleans.
+  The ! operator inverts the Boolean values.
+  Recursion is used to handle nested objects.
+*/
