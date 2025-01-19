@@ -19,7 +19,7 @@ function multiply(a, b) {
   let positive = b > 0;
   b = Math.abs(b);
   for (let i = 0; i < b; i++) {
-    result = add(result, a);
+    result = add(0, a);
   }
   return positive ? result : -result;
 }

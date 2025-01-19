@@ -6,28 +6,23 @@
 
 function areObjectsEqual(obj1, obj2) {
     if (obj1 === obj2) return true
-
-
-    let obj1Keys = Object.keys(obj1);
-    let obj2Keys = Object.keys(obj2);
-
-    for (let i = 0; i < obj1Keys.length && i < obj2Keys.length; i++) {
-        if (typeof obj1[obj1Keys[i]] === "object" && typeof obj2[obj2Keys[i]] === "object") {
-            let result = areObjectsEqual(obj1[obj1Keys[i]], obj2[obj2Keys[i]]);
-            if (result !== true) {
-                return false;
-            }
+    if (obj1.length !== obj2.length) return false
+    function addtoArr (obj) {
+        let arr = []
+        for (let key in obj) {
+        if (typeof obj[key] === "object") {
+          arr = arr.concat(addtoArr(obj[key]))
         } else {
-            if (obj1[obj1Keys[i]] !== obj2[obj2Keys[i]]) { // Why is this necessary? 
-                return false;
-            }
+            arr.push(obj[key])
         }
     }
-    return true
+    return arr
+}
+let result1 = addtoArr(obj1)
+let result2 = addtoArr(obj2)
+return result1.every((el) => result2.includes(el))
 }
 
-/*It shouldn't be necesssary because there is no mismatch 
-the deeper level (both arrays have b: {c : 2} so 2===2)*/
 
 // When ready, use code below for testing
 
