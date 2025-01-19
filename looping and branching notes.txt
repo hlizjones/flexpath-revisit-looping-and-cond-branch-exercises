@@ -1,0 +1,178 @@
+Classic For Loop: Most powerful/gets specific
+    Anything other than i++ should be this syntax i = i+2
+
+For of Loop: gets value; only can be used on iterable objects
+    (let [index, value] of arr.entries()) -> only shows indexes doesn't manipulate them -> entries() only works on arrs
+
+Iterables:
+    Array
+    HTMLCOllection
+    Strings
+    Sets
+    Maps
+
+Maps with For of:
+    console.log("Map:");
+    const map = new Map([
+    [1, 'one'],
+    [2, 'two'],
+    [3, 'three'],
+
+    ]);
+
+    for (const entry of map) {
+    console.log(entry);
+    }
+
+    for (const entry of map) {
+    console.log( At key ${entry[0]} we have value ${entry.at(1)}');
+    }
+    console.log("Keys:");
+    for(const key of map.keys()){
+    console.log(key);
+
+    }
+
+    console.log("Values:");
+    for(const value of map.values()){
+    console.log(value);
+    }
+    
+.forEach: 
+    can used (el, i) second parameter gets index
+    skips absent values in sparse arrays
+    can't use break or continue keywords
+
+.filter(//boolean returning expression)
+    let filtered = prices.filter(price => price > 100)
+    returns new array
+
+.map 
+    manipulate elements however needed
+    returns new array 
+
+.find
+    returns first item in arr that satifies testing function (e => e==="b")
+
+More array methods to use:
+    
+    every()
+    some()
+
+while: 
+
+    let prices - [20, 50, 120, 200];
+
+    For:
+    for (let i - 0; i < prices.length; i++) {
+        console.log(prices.at(i));
+    }
+
+
+    While: // Same result as for loop above but with while loop
+    let i - 0;
+    while(i < prices.length){
+
+        console.log(prices.at(i));
+        1++;
+    }
+
+do while: executes at least once since consition is check at end of loop, rarely used
+
+For in: gets keys; inherited properties are "enummerated" -> meaning inherited properties will show up 
+    to get values: 
+        for(let index in stocks) {
+        console. log(stocks[index]);
+        }
+
+    use hasOwnProperty or typeof to skip inherited properties or other types
+        console.log("For in:");
+        for (let property in stock) {
+            if(stock.hasOwnProperty(property)) {
+            if(typeof stock [property]=== 'function) {
+            continue;
+            }
+            console. log(property + "->" + stock[property]);
+            }
+        }
+
+CHEAT SHEET: 
+    for of: use on arrays and oher iterables, use .keys and .entried methods for objects
+    for in: use only on objects
+
+For await of: for await (let e of asyncIterable) {}
+    use when current iteration depends on previous iteration
+
+    Ways to use: 
+        for (let p of await Promise.all(promises)){
+        }
+
+        for (let e of items) {
+
+        const res = await somethingAsync(e);
+
+        }
+
+        for await (let e of asyncIterable) {
+        }
+
+    
+
+Optimize Loop Performance:
+    -.forEach tends to be slower bc .forEach
+    -end search early if appropriate (use break, continue, some(), etc)
+
+Branching:
+
+    Switch statement is a good replacement for If/Else if you have 3 to 10 "Else" branches
+        default at end of switch can either 1) throw an error 2) write default logic
+        add break statement or use return keyword (preferred) after each case or code will fall through and assume logic of last branches
+        group cases together if they have the same result/logic applied to them
+
+Truthy/Falsy
+    Falsy: null, undefined, false, NaN, 0, -0, 0n, "", document.all
+    Common blueprint for using truthy/falsy:
+        let value = "";
+
+        if(value) { 
+        console.log("Truthy");
+        }
+        else {
+        console.log("Falsy");
+        }
+
+    Be care of treating 0 as absent value
+        Example:
+        let stock_1 = {
+        "name": "Google",
+        "dividend": 0,
+        }
+
+        let stock_2 = {
+        "name": "Microsoft",
+        "dividend": undefined,
+        }
+
+        let stocks = [stock_1, stock_2];
+        let zeroDividendStocks = [];
+
+        for(let stock of stocks) {
+        if(!stock.dividend) {
+            console.log(`${stock.name} does not pay a dividend`);
+            zeroDividendStocks.push(stock);
+        }
+        }
+
+            Google would be included in zeroDividendStocks even though technically it has a dividend of 0
+            Differentiate logic btw absent and zero
+
+Ternary Operator: 
+    let result = {expression with a} ? a : b;
+    If logic is true, a; if not, b
+
+Coalescing Nullish Operator:
+    a !== undefined && a !== null ? a : backup
+    checks if data is present
+    if data is present, a; if not, b
+    backup is backup or fallback data
+    
